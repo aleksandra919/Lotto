@@ -14,7 +14,8 @@ const lotto = function() {
     const div = document.createElement("div");
     div.textContent = lottoResult;
     result.push(lottoResult);
-    document.body.appendChild(div);
+    const numberWrappers = document.getElementById('numbersWrapper')
+    numberWrappers.appendChild(div);
 }
 
 const button = document.querySelector("button");
